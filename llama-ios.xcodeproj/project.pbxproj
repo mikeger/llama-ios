@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD038D5529C291F4001DB4BB /* ggml-model-q4_0.bin in Resources */ = {isa = PBXBuildFile; fileRef = FD038D5429C291F4001DB4BB /* ggml-model-q4_0.bin */; };
+		FD038D5B29C29308001DB4BB /* LlamaWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = FD038D5A29C29308001DB4BB /* LlamaWrapper */; };
+		FD038D5D29C2930B001DB4BB /* Llama in Frameworks */ = {isa = PBXBuildFile; productRef = FD038D5C29C2930B001DB4BB /* Llama */; };
+		FD7E644029C284A1002A264A /* LlamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E643F29C284A1002A264A /* LlamaApp.swift */; };
+		FD7E644229C284A1002A264A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E644129C284A1002A264A /* ContentView.swift */; };
+		FD7E644429C284A3002A264A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7E644329C284A3002A264A /* Assets.xcassets */; };
+		FD7E644729C284A3002A264A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7E644629C284A3002A264A /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD038D5429C291F4001DB4BB /* ggml-model-q4_0.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-model-q4_0.bin"; sourceTree = "<group>"; };
+		FD038D5629C29238001DB4BB /* llama-cpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = "llama-cpp"; sourceTree = SOURCE_ROOT; };
+		FD038D6029C29E5E001DB4BB /* llama-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "llama-ios.entitlements"; sourceTree = "<group>"; };
+		FD7E643C29C284A1002A264A /* llama-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "llama-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7E643F29C284A1002A264A /* LlamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlamaApp.swift; sourceTree = "<group>"; };
+		FD7E644129C284A1002A264A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD7E644329C284A3002A264A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD7E644629C284A3002A264A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD7E643929C284A1002A264A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD038D5D29C2930B001DB4BB /* Llama in Frameworks */,
+				FD038D5B29C29308001DB4BB /* LlamaWrapper in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD038D5929C29308001DB4BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD7E643329C284A1002A264A = {
+			isa = PBXGroup;
+			children = (
+				FD7E643E29C284A1002A264A /* llama-ios */,
+				FD7E643D29C284A1002A264A /* Products */,
+				FD038D5929C29308001DB4BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD7E643D29C284A1002A264A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD7E643C29C284A1002A264A /* llama-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD7E643E29C284A1002A264A /* llama-ios */ = {
+			isa = PBXGroup;
+			children = (
+				FD038D6029C29E5E001DB4BB /* llama-ios.entitlements */,
+				FD038D5629C29238001DB4BB /* llama-cpp */,
+				FD7E643F29C284A1002A264A /* LlamaApp.swift */,
+				FD038D5429C291F4001DB4BB /* ggml-model-q4_0.bin */,
+				FD7E644129C284A1002A264A /* ContentView.swift */,
+				FD7E644329C284A3002A264A /* Assets.xcassets */,
+				FD7E644529C284A3002A264A /* Preview Content */,
+			);
+			path = "llama-ios";
+			sourceTree = "<group>";
+		};
+		FD7E644529C284A3002A264A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD7E644629C284A3002A264A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD7E643B29C284A1002A264A /* llama-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD7E644A29C284A3002A264A /* Build configuration list for PBXNativeTarget "llama-ios" */;
+			buildPhases = (
+				FD7E643829C284A1002A264A /* Sources */,
+				FD7E643929C284A1002A264A /* Frameworks */,
+				FD7E643A29C284A1002A264A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD038D5F29C29362001DB4BB /* PBXTargetDependency */,
+				FD038D5829C29303001DB4BB /* PBXTargetDependency */,
+			);
+			name = "llama-ios";
+			packageProductDependencies = (
+				FD038D5A29C29308001DB4BB /* LlamaWrapper */,
+				FD038D5C29C2930B001DB4BB /* Llama */,
+			);
+			productName = "llama-ios";
+			productReference = FD7E643C29C284A1002A264A /* llama-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD7E643429C284A1002A264A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FD7E643B29C284A1002A264A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = FD7E643729C284A1002A264A /* Build configuration list for PBXProject "llama-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD7E643329C284A1002A264A;
+			productRefGroup = FD7E643D29C284A1002A264A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD7E643B29C284A1002A264A /* llama-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD7E643A29C284A1002A264A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7E644729C284A3002A264A /* Preview Assets.xcassets in Resources */,
+				FD7E644429C284A3002A264A /* Assets.xcassets in Resources */,
+				FD038D5529C291F4001DB4BB /* ggml-model-q4_0.bin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD7E643829C284A1002A264A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7E644229C284A1002A264A /* ContentView.swift in Sources */,
+				FD7E644029C284A1002A264A /* LlamaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD038D5829C29303001DB4BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = FD038D5729C29303001DB4BB /* LlamaWrapper */;
+		};
+		FD038D5F29C29362001DB4BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = FD038D5E29C29362001DB4BB /* Llama */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD7E644829C284A3002A264A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD7E644929C284A3002A264A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD7E644B29C284A3002A264A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "llama-ios/llama-ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"llama-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = UKSK4U959S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gerasymenko.llama-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD7E644C29C284A3002A264A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "llama-ios/llama-ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"llama-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = UKSK4U959S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gerasymenko.llama-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD7E643729C284A1002A264A /* Build configuration list for PBXProject "llama-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7E644829C284A3002A264A /* Debug */,
+				FD7E644929C284A3002A264A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD7E644A29C284A3002A264A /* Build configuration list for PBXNativeTarget "llama-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7E644B29C284A3002A264A /* Debug */,
+				FD7E644C29C284A3002A264A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD038D5729C29303001DB4BB /* LlamaWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LlamaWrapper;
+		};
+		FD038D5A29C29308001DB4BB /* LlamaWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LlamaWrapper;
+		};
+		FD038D5C29C2930B001DB4BB /* Llama */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Llama;
+		};
+		FD038D5E29C29362001DB4BB /* Llama */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Llama;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FD7E643429C284A1002A264A /* Project object */;
+}
